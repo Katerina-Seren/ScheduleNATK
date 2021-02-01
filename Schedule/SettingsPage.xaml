@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Schedule.SettingsPage"
+			Title="Колледж">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Image Source="iconnatk.png" HeightRequest="100" Margin="15" HorizontalOptions="Center"></Image>
+            <Label Text="Новосибирский авиационный технический колледж" HorizontalTextAlignment="Center" TextColor="#006EA6" FontFamily="Trebuchet" FontSize="Large"></Label>
+
+            <Label Text="Приложение «Расписание НАТКа» было разработано в качестве выпускной квалификационной работы по специальности «Программирование в компьютерных системах» на платформе Xamarin."
+                   FontSize="Default" FontFamily="Trebuchet" Margin="10, 2"></Label>
+
+            <Label Text="Сайт колледжа:"  FontSize="Default" Margin="10, 2"></Label>   
+            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="10, 2">
+                <Image Source="link.png" HeightRequest="20"></Image>
+                <Label Text="natk.ru" FontSize="Default" TextColor="#458ff7">
+                    <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SiteLabelClicked" />
+                        </Label.GestureRecognizers>
+                    </Label>        
+            </StackLayout>
+            <Label Text="Почта разработчика:"  FontSize="Default"  Margin="10, 2"></Label>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="10, 2">
+                <Image Source="link.png" HeightRequest="20"></Image>
+                <Label Text="serenkoei@icloud.com" FontSize="Default" TextColor="#458ff7">
+                <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="EmailLabelClicked" />
+                        </Label.GestureRecognizers>
+                    </Label> 
+            </StackLayout>
+
+            <Label Text="© Серенко Е.И., 2020" HorizontalOptions="Center" FontSize="Default" FontFamily="Trebuchet" TextColor="#E3E3E3" Margin="15"></Label>
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

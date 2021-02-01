@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Schedule.GroupsSchedule">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label  HorizontalTextAlignment="Center" FontFamily="Calibri" FontSize="26" x:Name="ThisGroup" Margin="0, 5, 0, 10"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 10">
+
+                    <Label x:Name="Monday" Padding="5,10,5,10" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MondayTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="Tuesday"  Padding="5,10,5,10" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TuesdayTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="Wednesday" Padding="5,10,5,10" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="WednesdayTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="Thursday" Padding="5,10,5,10" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ThursdayTapped"  />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="Friday" Padding="5,10,5,10" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="FridayTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="Saturday" Padding="5,10,5,10" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SaturdayTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+                <Frame  x:Name="FrameZamena" CornerRadius="0" BackgroundColor="#006EA6" HasShadow="False" IsVisible="false" Margin="2" Padding="0,5">
+                    <Label x:Name="ZamenaLabel" TextColor="#FFF" HorizontalTextAlignment="Center"></Label>
+                </Frame>
+
+
+                <Frame  x:Name="FrameFirstLesson" CornerRadius="10" BackgroundColor="#ebebeb" HasShadow="False" IsVisible="false">
+                    <Label x:Name="FirstLesson" HorizontalTextAlignment="Center"></Label>
+                </Frame>
+                <Frame x:Name="FrameSecondLesson" CornerRadius="10" BackgroundColor="#ebebeb" HasShadow="False" IsVisible="false">
+                    <Label x:Name="SecondLesson" HorizontalTextAlignment="Center" Margin="5"></Label>
+                </Frame>
+                <Frame x:Name="FrameThirdLesson" CornerRadius="10"  BackgroundColor="#ebebeb" HasShadow="False" IsVisible="false">
+                    <Label x:Name="ThirdLesson" HorizontalTextAlignment="Center" Margin="5"></Label>
+                </Frame>
+                <Frame x:Name="FrameFourthLesson" CornerRadius="10" BackgroundColor="#ebebeb" HasShadow="False" IsVisible="false">
+                    <Label x:Name="FourthLesson" HorizontalTextAlignment="Center" Margin="5"></Label>
+                </Frame>
+                <Frame x:Name="FrameFifthLesson" CornerRadius="10" BackgroundColor="#ebebeb" HasShadow="False" IsVisible="false">
+                    <Label x:Name="FifthLesson" HorizontalTextAlignment="Center" Margin="5"></Label>
+                </Frame>
+                <Frame x:Name="FrameSixthLesson" CornerRadius="10" BackgroundColor="#ebebeb" HasShadow="False" IsVisible="false">
+                    <Label x:Name="SixthLesson" HorizontalTextAlignment="Center" Margin="5"></Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
